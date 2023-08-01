@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserService {
@@ -26,4 +27,19 @@ public class UserService {
         userList.addAll(Arrays.asList(user1,user2,user3,user4,user5));
     }
 
+    public Optional<User> getUser(Integer id) {
+        Optional optional = Optional.empty();
+
+        for (User user : userList) {
+            if (user.getId() == id) {
+
+                optional = Optional.of(user);
+
+                //Return the user object if found
+                return optional; 
+            }
+        }
+        // Return null if user not found
+        return optional;
+   }
 }
