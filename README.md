@@ -39,4 +39,6 @@ Clients can make GET requests to the API endpoint `/user?id=<user_id>` using RES
 
 For example, making a GET request to `http://localhost:8080/user?id=3` will retrieve the user information for user with ID 3.
 
-**Built for eductaional puposes and an intro to Spring Boot and REST/API** 
+![Alt Text](screenshot.png)
+
+**Built for eductaional puposes and an intro to Spring Boot and REST/API**
