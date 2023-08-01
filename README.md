@@ -6,10 +6,11 @@
 
 This project aims to create a simple REST API using Spring Boot and Java. The API allows clients to perform GET requests to retrieve user information based on the provided user ID.
 
-## Frameworks/Languages Used
+## Frameworks/Languages/Tools Used
 
 - Spring Boot
 - Java
+- Maven
 
 ## Code Overview
 
